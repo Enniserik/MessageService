@@ -9,6 +9,6 @@ package messageservice;
  *
  * @author eennis
  */
-public class GUIWriter {
+public class GUIWriter implements MessageWriter {
     
 }

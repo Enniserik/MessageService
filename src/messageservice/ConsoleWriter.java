@@ -9,6 +9,6 @@ package messageservice;
  *
  * @author eennis
  */
-public class ConsoleWriter {
+public class ConsoleWriter implements MessageWriter {
     
 }

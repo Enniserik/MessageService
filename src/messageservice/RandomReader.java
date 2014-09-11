@@ -9,6 +9,6 @@ package messageservice;
  *
  * @author eennis
  */
-public class RandomReader {
+public class RandomReader implements MessageReader {
     
 }

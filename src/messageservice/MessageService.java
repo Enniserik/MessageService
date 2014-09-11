@@ -11,4 +11,16 @@ package messageservice;
  */
 public class MessageService {
     
+    private MessageReader reader;
+    private MessageWriter writer;
+    
+    public MessageService(MessageReader reader, MessageWriter writer){
+        this.reader = reader;
+        this.writer = writer;
+    }
+    
+    public void sendMessage(){
+        
+    }
+    
 }

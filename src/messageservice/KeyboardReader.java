@@ -9,6 +9,6 @@ package messageservice;
  *
  * @author eennis
  */
-public class KeyboardReader {
+public class KeyboardReader implements MessageReader {
     
 }
