@@ -19,8 +19,26 @@ public class MessageService {
         this.writer = writer;
     }
     
-    public void sendMessage(){
-        
+    public void processMessage(){
+        writer.outputMessage(reader.getMessage());
     }
+
+    public MessageReader getReader() {
+        return reader;
+    }
+
+    public void setReader(MessageReader reader) {
+        this.reader = reader;
+    }
+
+    public MessageWriter getWriter() {
+        return writer;
+    }
+
+    public void setWriter(MessageWriter writer) {
+        this.writer = writer;
+    }
+    
+    
     
 }

@@ -10,5 +10,10 @@ package messageservice;
  * @author eennis
  */
 public class RandomReader implements MessageReader {
+
+    @Override
+    public String getMessage() {
+        return "";
+    }
     
 }
