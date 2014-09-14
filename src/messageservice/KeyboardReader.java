@@ -16,7 +16,7 @@ public class KeyboardReader implements MessageReader {
         System.out.println("Please enter your message.");
         keyboardInput = keyboard.nextLine();
         keyboard.close();
-        return "Your input was: " + keyboardInput;
+        return keyboardInput;
     }
 
 }
