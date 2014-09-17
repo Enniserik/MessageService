@@ -11,7 +11,7 @@ import javax.swing.SwingUtilities;
 public class GUIWriter implements MessageWriter {
 
     @Override
-    public void outputMessage(String message) {
+    public void writeMessage(String message) {
         
         /**
          * JOptionPane has problems running with Scanner.nextLine() (something to

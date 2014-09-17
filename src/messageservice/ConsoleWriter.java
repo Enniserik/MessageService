@@ -7,7 +7,7 @@ package messageservice;
 public class ConsoleWriter implements MessageWriter {
 
     @Override
-    public void outputMessage(String message) {
+    public void writeMessage(String message) {
         System.out.println(message);
     }
     

@@ -8,13 +8,19 @@ import java.util.Scanner;
  */
 public class KeyboardReader implements MessageReader {
     
-    private Scanner keyboard = new Scanner(System.in);
-    private String keyboardInput;
-    
     @Override
-    public String getMessage() {
-        System.out.println("Please enter your message.");
-        keyboardInput = keyboard.nextLine();
+    public String readMessage() {
+        Scanner keyboard = new Scanner(System.in);  
+        String line = "";
+        String keyboardInput = "";
+        System.out.println("Please enter your message. Enter e to exit.");
+        while(!line.equals("e")){
+            line = keyboard.nextLine();
+            if(line.equals("e")){
+                break;
+            }
+            keyboardInput += line;
+        }
         keyboard.close();
         return keyboardInput;
     }

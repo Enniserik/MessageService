@@ -6,6 +6,6 @@ package messageservice;
  */
 public interface MessageReader {
     
-    public abstract String getMessage();
+    public abstract String readMessage();
     
 }

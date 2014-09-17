@@ -15,7 +15,7 @@ public class MessageService {
     }
     
     public void processMessage(){
-        writer.outputMessage(reader.getMessage());
+        writer.writeMessage(reader.readMessage());
     }
 
     public MessageReader getReader() {

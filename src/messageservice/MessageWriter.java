@@ -6,6 +6,6 @@ package messageservice;
  */
 public interface MessageWriter {
     
-    public abstract void outputMessage(String message);
+    public abstract void writeMessage(String message);
     
 }

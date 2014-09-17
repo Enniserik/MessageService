@@ -9,14 +9,27 @@ import java.util.Random;
 public class RandomReader implements MessageReader {
     
     private RandomStringGenerator generator;
+    private String[] animals = {
+        "Camel",
+        "Wolf",
+        "Koala",
+        "Giraffe",
+        "Dugong",
+        "Hippo",
+        "Rhino",
+        "Turtle",
+        "Dog",
+        "Tiger"
+    };
+    
     
     public RandomReader(){
         generator = new RandomStringGenerator();
     }
     
     @Override
-    public String getMessage() {
-        return generator.getRandomString();
+    public String readMessage() {
+        return animals[generator.getRandomNumber() - 1];
     }
     
 }
